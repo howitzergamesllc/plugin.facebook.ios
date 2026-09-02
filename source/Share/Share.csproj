@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>true</ImplicitUsings>
+    <IsBindingProject>true</IsBindingProject>
+    <NoBindingEmbedding>true</NoBindingEmbedding>
+    <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
+    <RootNamespace>Facebook.Share</RootNamespace>
+    <AssemblyName>Facebook.Share</AssemblyName>
+    <AssemblyVersion>10.0.80.0</AssemblyVersion>
+    <FileVersion>10.0.80.0</FileVersion>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <PackageVersion>10.0.80-local</PackageVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PackageVersion>10.0.80.0</PackageVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>plugin.Facebook.iOS.Share</PackageId>
+    <Title>Facebook Share API iOS Library</Title>
+    <Summary>C# bindings for Facebook Share API iOS Library</Summary>
+    <Description>C# bindings for Facebook Share API iOS Library</Description>
+		<PackageTags>MAUI Android Facebook</PackageTags>
+		<Authors>Howitzer Games</Authors>
+		<Owners>Howitzer Games</Owners>
+		<Copyright>© Microsoft Corporation. All rights reserved. © 2026 Howitzer Games. All Rights Reserved</Copyright>
+    <PackageProjectUrl>https://github.com/howitzergamesllc/plugin.facebook.ios</PackageProjectUrl>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<NeutralLanguage>en</NeutralLanguage>
+		<PackageIcon>Icon.png</PackageIcon>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <RepositoryUrl>https://github.com/howitzergamesllc/plugin.facebook.ios</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <PackOnBuild>true</PackOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\..\art\Icon.png" Pack="True" PackagePath="Icon.png" />
+		<None Include="..\..\License.md" Pack="True" PackagePath="License.md" />
+		<None Include="..\..\Readme.md" Pack="True" PackagePath="Readme.md"/>
+		<None Include="..\..\External-Dependency-Info.txt" Pack="True" PackagePath="THIRD-PARTY-NOTICES.txt" />
+	</ItemGroup>
+  
+  <ItemGroup>
+    <None Include="sharpie\ApiDefinitionsRaw.md" Pack="False"/>
+    <None Include="sharpie\StructsAndEnumsRaw.md" Pack="False"/>
+    <None Include="sharpie\ApiDefinitionsSwiftRaw.md" Pack="False"/>
+    <None Include="sharpie\StructsAndEnumsSwiftRaw.md" Pack="False"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <NativeReference Include="..\..\externals\FBSDKShareKit.xcframework">
+      <Kind>Framework</Kind>
+      <SmartLink>True</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-ObjC</LinkerFlags>
+      <Frameworks>UIKit Foundation CoreGraphics Photos Social AVFoundation</Frameworks>
+    </NativeReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ObjcBindingCoreSource Include="Enums.cs" />
+    <ObjcBindingCoreSource Include="EnumsSwift.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+    <ObjcBindingApiDefinition Include="ApiDefinitionsSwift.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj" PrivateAssets="None" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Build.Download" Version="0.11.4" PrivateAssets="None" />
+  </ItemGroup>
+</Project>

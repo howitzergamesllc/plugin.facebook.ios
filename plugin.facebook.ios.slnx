@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/samples/" />
+  <Folder Name="/samples/Login/">
+    <Project Path="samples/Login/LoginMauiSample/LoginMauiSample.csproj" />
+  </Folder>
+  <Folder Name="/samples/Share/">
+    <Project Path="samples/Share/ShareMauiSample/ShareMauiSample.csproj" />
+  </Folder>
+  <Folder Name="/source/">
+    <Project Path="source/AEM/AEM.csproj" />
+    <Project Path="source/Core/Core.csproj" />
+    <Project Path="source/CoreBasics/CoreBasics.csproj" />
+    <Project Path="source/GamingServices/GamingServices.csproj" />
+    <Project Path="source/Login/Login.csproj" />
+    <Project Path="source/Share/Share.csproj" />
+  </Folder>
+</Solution>
