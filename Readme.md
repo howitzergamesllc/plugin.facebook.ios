@@ -10,13 +10,13 @@ https://github.com/xamarin/FacebookComponents
 
 ## Building 
 
-See the [BuildNotes](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/BuildNotes(Mac).md) for specific instructions on building this nuget here:
+See the [BuildNotes](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/BuildNotes(Mac).md) for specific instructions on building this nuget.
 
 
 
 ## License
 
-The [License](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/License.md) developers are required to accept is a generic MIT license located at:
+The [License](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/License.md) developers are required to accept.
 
 
 
