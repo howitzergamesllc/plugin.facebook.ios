@@ -2,7 +2,7 @@
 
 In 2025, the Xamarin.Facebook repository was archived.
 
-In 2026, Howitzer Games forked the original Xamarin.Facebook components repo and updated the SDK the latest version. 
+In 2026, Howitzer Games forked the original Xamarin.Facebook components repo and updated the SDK to the latest version. 
 
 To see the original work, go to:
 https://github.com/xamarin/FacebookComponents
@@ -10,14 +10,14 @@ https://github.com/xamarin/FacebookComponents
 
 ## Building 
 
-See the [BuildNotes] for specific instructions on building this nuget here:
-https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/BuildNotes(Mac).md
+See the [BuildNotes](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/BuildNotes(Mac).md) for specific instructions on building this nuget here:
+
 
 
 ## License
 
-The [License] developers are required to accept is a generic MIT license located at:
-https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/License.md
+The [License](https://github.com/howitzergamesllc/plugin.facebook.ios/blob/main/License.md) developers are required to accept is a generic MIT license located at:
+
 
 
 ## Facebook SDK Notices

@@ -26,7 +26,7 @@
     <Title>Facebook LoginKit API iOS Library</Title>
     <Summary>C# bindings for Facebook LoginKit API iOS Library</Summary>
     <Description>C# bindings for Facebook LoginKit API iOS Library</Description>
-		<PackageTags>MAUI Android Facebook</PackageTags>
+		<PackageTags>MAUI iOS Facebook</PackageTags>
 		<Authors>Howitzer Games</Authors>
 		<Owners>Howitzer Games</Owners>
 		<Copyright>© Microsoft Corporation. All rights reserved. © 2026 Howitzer Games. All Rights Reserved</Copyright>
