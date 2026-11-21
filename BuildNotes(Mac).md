@@ -141,7 +141,7 @@ sharpie bind \
     ./externals/FBAEMKit.xcframework/ios-arm64_arm64e/FBAEMKit.framework/Headers/FBAEMKit-swift.h \
     --output=source/AEM/sharpie \
     --namespace=Facebook.AEM \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBAEMKit.xcframework/ios-arm64_arm64e
 ```
 - FBSDKCoreKit_Basics
@@ -150,7 +150,7 @@ sharpie bind \
     ./externals/FBSDKCoreKit_Basics.xcframework/ios-arm64_arm64e/FBSDKCoreKit_Basics.framework/Headers/FBSDKCoreKit_Basics.h \
     --output=source/CoreBasics/sharpie \
     --namespace=Facebook.CoreBasics \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKCoreKit_Basics.xcframework/ios-arm64_arm64e
 ```
 - FBSDKCoreKit
@@ -159,13 +159,13 @@ sharpie bind \
     ./externals/FBSDKCoreKit.xcframework/ios-arm64_arm64e/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h \
     --output=source/Core/sharpie \
     --namespace=Facebook.Core \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKCoreKit.xcframework/ios-arm64_arm64e
 sharpie bind \
     ./externals/FBSDKCoreKit.xcframework/ios-arm64_arm64e/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-Swift.h \
     --output=source/Core/sharpie \
     --namespace=Facebook.Core \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKCoreKit.xcframework/ios-arm64_arm64e
 ```
 - FBSDKLoginKit
@@ -174,13 +174,13 @@ sharpie bind \
     ./externals/FBSDKLoginKit.xcframework/ios-arm64_arm64e/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h \
     --output=source/Login/sharpie \
     --namespace=Facebook.Login \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKLoginKit.xcframework/ios-arm64_arm64e
 sharpie bind \
     ./externals/FBSDKLoginKit.xcframework/ios-arm64_arm64e/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-Swift.h \
     --output=source/Login/sharpie \
     --namespace=Facebook.Login \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKLoginKit.xcframework/ios-arm64_arm64e
 ```
 - FBSDKShareKit
@@ -189,13 +189,13 @@ sharpie bind \
     ./externals/FBSDKShareKit.xcframework/ios-arm64_arm64e/FBSDKShareKit.framework/Headers/FBSDKShareKit.h \
     --output=source/Share/sharpie \
     --namespace=Facebook.Share \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKShareKit.xcframework/ios-arm64_arm64e
 sharpie bind \
     ./externals/FBSDKShareKit.xcframework/ios-arm64_arm64e/FBSDKShareKit.framework/Headers/FBSDKShareKit-Swift.h \
     --output=source/Share/sharpie \
     --namespace=Facebook.Share \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F./externals/FBSDKShareKit.xcframework/ios-arm64_arm64e
 ```
 - FBSDKGamingServicesKit
@@ -204,13 +204,13 @@ sharpie bind \
     ./externals/FBSDKGamingServicesKit.xcframework/ios-arm64_arm64e/FBSDKGamingServicesKit.framework/Headers/FBSDKGamingServicesKit-swift.h \
     --output=source/GamingServices/sharpie \
     --namespace=Facebook.GamingServices \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F ./externals/FBSDKGamingServicesKit.xcframework/ios-arm64_arm64e
 sharpie bind \
     ./externals/FBSDKGamingServicesKit.xcframework/ios-arm64_arm64e/FBSDKGamingServicesKit.framework/Headers/FBSDKGamingServicesKit-swift.h \
     --output=source/GamingServices/sharpie \
     --namespace=Facebook.GamingServices \
-    --sdk=iphoneos26.5 \
+    --sdk=iphoneos27.2 \
     -c -F./externals/FBSDKGamingServicesKit.xcframework/ios-arm64_arm64e
 ```
 
@@ -299,12 +299,12 @@ GITHUBTOKEN=ghp_yoursuperlonguniqueapikeyhere
 
 ### Publishing
 ```zsh
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/AEM/bin/Release/plugin.Facebook.iOS.AEM.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/CoreBasics/bin/Release/plugin.Facebook.iOS.CoreBasics.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Core/bin/Release/plugin.Facebook.iOS.Core.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/GamingServices/bin/Release/plugin.Facebook.iOS.GamingServices.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Login/bin/Release/plugin.Facebook.iOS.Login.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
-dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Share/bin/Release/plugin.Facebook.iOS.Share.10.0.80.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/AEM/bin/Release/plugin.Facebook.iOS.AEM.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/CoreBasics/bin/Release/plugin.Facebook.iOS.CoreBasics.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Core/bin/Release/plugin.Facebook.iOS.Core.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/GamingServices/bin/Release/plugin.Facebook.iOS.GamingServices.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Login/bin/Release/plugin.Facebook.iOS.Login.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
+dotnet nuget push "$HOME/Path/to/your/projects/Plugin.FacebookKit/plugin.facebook.ios/source/Share/bin/Release/plugin.Facebook.iOS.Share.11.0.0.nupkg" --source "https://nuget.pkg.github.com/youraccount/index.json" --api-key $GITHUBTOKEN
 ```
 
 ### Setup the sample projects

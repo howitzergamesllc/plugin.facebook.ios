@@ -239,6 +239,9 @@ _Pvt_Extensions
 .idea
 *.vs
 
+# Temp iOS Files
+.DS_Store
+
 # facebook-ios-sdk
 /swift
 /externals

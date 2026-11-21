@@ -1,24 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+    <TargetFrameworks>net11.0-ios;net11.0-maccatalyst</TargetFrameworks>
     <Nullable>enable</Nullable>
     <ImplicitUsings>true</ImplicitUsings>
     <IsBindingProject>true</IsBindingProject>
     <NoBindingEmbedding>true</NoBindingEmbedding>
-    <SupportedOSPlatformVersion>15.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion>16.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">17.0</SupportedOSPlatformVersion>
     <RootNamespace>Facebook.CoreBasics</RootNamespace>
     <AssemblyName>Facebook.CoreBasics</AssemblyName>
-    <AssemblyVersion>10.0.80.0</AssemblyVersion>
-    <FileVersion>10.0.80.0</FileVersion>
+    <AssemblyVersion>11.0.0.0</AssemblyVersion>
+    <FileVersion>11.0.0.0</FileVersion>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>10.0.80-local</PackageVersion>
+    <PackageVersion>11.0.0-local</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>10.0.80.0</PackageVersion>
+    <PackageVersion>11.0.0.0</PackageVersion>
   </PropertyGroup>
 
   <PropertyGroup>
@@ -80,6 +81,6 @@
     <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Build.Download" Version="0.11.4" PrivateAssets="None" />
+    <PackageReference Include="Xamarin.Build.Download" Version="0.11.6" PrivateAssets="None" />
   </ItemGroup>
 </Project>
